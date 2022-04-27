@@ -55,3 +55,33 @@ This request should return a `response` with the random number
 > [Math.random() [en]](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
 >
 > [Math.random() [de]](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Math/random)
+
+# Task 6 - Add a GET request to '/isNumber'
+
+Using the snippet **GET request with parameters**, write some middleware that will respond to the path `/isNumber`
+
+> Hint: Parameters can be added to a path with a `:` symbol, for example, to add the parameter `name` we would write `/:name/`
+
+This request should receive one parameter `value`
+
+This request should check that the parameter `value` can be converted to a number
+
+If it can be converted to a number, then send a `response` with the message:
+
+> "This is a number"
+
+If it can not be converted to a number, then send a `response` with the message:
+
+> "This is not a number"
+
+> Hint: You can use both the Math function `Number()` and the `isNaN()` function to see if the value can be converted to a number or not
+
+> Research:
+>
+> [Number() [english]](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
+>
+> [Number() [deutsch]](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Number)
+>
+> [isNaN() [english]](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN)
+>
+> [isNaN() [deutsch]](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/isNaN)
